@@ -5,7 +5,7 @@ the game on a big screen. Players join from their phones, race to tap the right 
 climb a live leaderboard. A presentation can carry optional prize money that the top 3 share.
 
 Built with React 19, TypeScript, Vite 6, Tailwind CSS v4 and React Router 7. It talks to the Go API
-in `../interactive-presentation`; the frontend holds no game logic of its own beyond display.
+in `../api`; the frontend holds no game logic of its own beyond display.
 
 ## Run it
 

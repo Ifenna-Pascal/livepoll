@@ -29,7 +29,7 @@ services:
   # so the browser only ever talks to http://localhost:3000.
   web:
     build:
-      context: ../interactive-presentation-web
+      context: ../web
     ports:
       - "3000:80"
     depends_on:

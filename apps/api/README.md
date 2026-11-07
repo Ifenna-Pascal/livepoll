@@ -2,7 +2,7 @@
 
 A Go REST API for running **live, quiz-style presentations**. A presenter builds a presentation out of polls, players join with a name, and the presenter steps through the polls one at a time while players vote from their own devices. Polls can have correct answers, so everyone also gets a live leaderboard. Updates stream to every screen instantly, and players and the presenter can chat.
 
-The React frontend lives in [`../interactive-presentation-web`](../interactive-presentation-web).
+The React frontend lives in [`../web`](../web).
 
 Built with **Gin**, **PostgreSQL**, **sqlc**, **golang-migrate**, and **JWT** auth, with interactive **Swagger** docs.
 
@@ -80,7 +80,7 @@ cp app.env.example app.env   # then edit the values
 docker compose up --build
 ```
 
-The API starts on **http://localhost:8081** and the frontend on **http://localhost:3000** (from `../interactive-presentation-web`). Migrations run automatically on startup.
+The API starts on **http://localhost:8081** and the frontend on **http://localhost:3000** (from `../web`). Migrations run automatically on startup.
 
 - Health check: http://localhost:8081/ping · Readiness (checks the database): http://localhost:8081/ready
 - Swagger UI: http://localhost:8081/swagger/index.html
